@@ -1,5 +1,5 @@
 # create a memory layer with two points
-layer =  QgsVectorLayer('LineString', 'lines' , "memory")
+layer =  QgsVectorLayer('LineString?crs=EPSG:29193', 'lines 4' , "memory")
 pr = layer.dataProvider() 
 # add the first point
 pt = QgsFeature()
@@ -8,7 +8,9 @@ wkt = "[[-43.95213962016855, -19.86504771937976], [-43.9526015658137, -19.864587
 
 wkt = wkt.replace("[", "").replace("],", "*").replace(",", " ").replace("*", ",").replace("]]","")
 
-wkt = "LINESTRING ("+wkt+")" 
+##wkt = "LINESTRING ("+wkt+")" 
+
+wkt = "LINESTRING (615995.7 7795842.3, 616524.5 7796162.0)"
 
 print wkt;
 
