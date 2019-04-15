@@ -1,5 +1,5 @@
 # create a memory layer with two points
-layer =  QgsVectorLayer('Point?crs=EPSG:29193', 'Point' , "memory")
+layer =  QgsVectorLayer('Point?crs=EPSG:31983', 'Point' , "memory")
 pr = layer.dataProvider() 
 # add the first point
 pt = QgsFeature()

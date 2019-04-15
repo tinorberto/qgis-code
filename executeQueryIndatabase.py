@@ -1,3 +1,7 @@
+"""
+Executa uma consulta no banco de dados oracle
+"""
+
 from PyQt4.QtSql import QSqlDatabase					
 import os
 
